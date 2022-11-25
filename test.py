@@ -1,4 +1,4 @@
-from program import sum_of_n_numbers
+from PROGRAM import sum_of_n_numbers
 import unittest
 
 class Test_Program(unittest.TestCase):
