@@ -3,12 +3,12 @@ pipeline{
     stages {
         stage('Clone Git'){
             steps{
-                git 'https://github.com/krushikar543/SE_Jenkins.git'
+                git 'https://github.com/SougandhKrishna/Jenkins.git'
             }
         }
         stage('Run Code'){
             steps{
-                sh "/usr/bin/python3 program.py"
+                sh "/usr/bin/python3 PROGRAM.py"
             }
         }
         stage('Test Code 1'){
