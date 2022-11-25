@@ -13,12 +13,12 @@ pipeline{
         }
         stage('Test Code 1'){
             steps{
-                sh "/usr/bin/python3 test2.py"
+                sh "/usr/bin/python3 test.py"
             }
         }
         stage('Test Code 2'){
             steps{
-                sh "/usr/bin/python3 test.py"
+                sh "/usr/bin/python3 test2.py"
             }
         }
     }
