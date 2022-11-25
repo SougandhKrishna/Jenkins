@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+    stages {
+        stage('Clone Git'){
+            steps{
+                git 'https://github.com/krushikar543/SE_Jenkins.git'
+            }
+        }
+        stage('Run Code'){
+            steps{
+                sh "/usr/bin/python3 program.py"
+            }
+        }
+        stage('Test Code 1'){
+            steps{
+                sh "/usr/bin/python3 test2.py"
+            }
+        }
+        stage('Test Code 2'){
+            steps{
+                sh "/usr/bin/python3 test.py"
+            }
+        }
+    }
+}
